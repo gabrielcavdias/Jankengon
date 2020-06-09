@@ -1,3 +1,33 @@
 audio{
     display: none;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    background-color: #ddd;
+    min-height: 100px;
+    padding: 5%;
+}
+main p{
+    text-align: center;
+}
+button{
+    width: 30%;
+    min-height: 50px;
+}
+.opcoes{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 300px;
+}
+#gon img{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}

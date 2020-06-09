@@ -7,7 +7,7 @@ function janken(ppt){
     }
     mytry = Number(ppt)
     gontry = getRandomInt(0,3)
-    gon.innerHTML=`<p>Primeiro é pedra...</p> <br> <audio controls autoplay><source src="audio/jankenpo.mp3" type="audio/mpeg"></audio>`
+    gon.innerHTML=`<img src="img/primeiropedra.jpg"> <br> <audio controls autoplay><source src="audio/jankenpo.mp3" type="audio/mpeg"></audio>`
     /* 0 = Pedra   1 = Papel   2 = tesoura*/
     setTimeout(function(){
         if(gontry===0){
@@ -18,7 +18,7 @@ function janken(ppt){
                 }else{
                     gon.innerHTML = '<p>Gon venceu!!!</p>'
                 }
-                gon.innerHTML+='<p>E Gon escolheu Pedra'
+                gon.innerHTML+='<p>E Gon escolheu Pedra</p> <img src="img/pedra.jpg">'
             }else if(gontry==1){
                 if(mytry===0){
                     gon.innerHTML = '<p>Gon venceu!!!</p>'
@@ -27,7 +27,7 @@ function janken(ppt){
                 }else{
                     gon.innerHTML = '<p>Você venceu!!!</p>'
                 }
-                gon.innerHTML+='<p>E Gon escolheu Papel</p>'
+                gon.innerHTML+='<p>E Gon escolheu Papel</p> <img src="img/papel.jpg">'
             }else if(gontry===2){
                 if(mytry===0){
                     gon.innerHTML = '<p>Você venceu!!!</p>'
@@ -36,7 +36,7 @@ function janken(ppt){
                 }else{
                     gon.innerHTML = '<p>Empate</p>'
                 }
-                gon.innerHTML+='<p>E Gon escolheu Tesoura</p>'
+                gon.innerHTML+='<p>E Gon escolheu Tesoura</p> <img src="img/tesoura.jpg">'
             }
     }, 4000)
     

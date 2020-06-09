@@ -8,19 +8,27 @@
 </head>
 <body>
     <header>
-        <h1>Primeiro é pedra</h1>
-        <em>Jogue Jankenpon contra o Gon</em>
+        <img src="img/logo.png" alt="Logo da associação Hunter">
+        <div class="headerdescr">
+            <h1>Primeiro é pedra</h1>
+            <em>Você é capaz de vencer Gon?</em>
+        </div>
     </header>
     <main>
-        <button onclick="janken(0)">
-            Pedra
-        </button>
-        <button onclick="janken(1)">
-            Papel
-        </button>
-        <button onclick="janken(2)">
-            Tesoura
-        </button>
+        <p>O Objetivo do jogo é você ganhar do Gon no Joquempô em uma melhor de 5</p>
+        <p>O vencedor ganha um card de Greed Island aleatório que pode dar vantagens nas próximas partidas</p>
+        <!--Ainda tá em desenvolvimento essa parte não se empolga-->
+        <section class="opcoes">
+            <button onclick="janken(0)">
+                Pedra
+            </button>
+            <button onclick="janken(1)">
+                Papel
+            </button>
+            <button onclick="janken(2)">
+                Tesoura
+            </button>
+        </section>
         <div id="gon"> 
         </div>
     </main>
