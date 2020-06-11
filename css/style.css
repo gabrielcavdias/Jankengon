@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    font-family: 'Josefin Sans',Arial, Helvetica, sans-serif;
+}
 header{
     display: flex;
     justify-content: space-between;
 }
 main{
-    background-color: #ddd;
+    color: #eee;
+    background-color: #333;
     min-height: 100px;
-    padding: 5%;
+    padding: 2% 5% 5% 5%;
+    width: 80%;
+    margin: 5% auto;
+    border-radius: 9px;
 }
-main p{
+main p,h2{
     text-align: center;
+}
+h2{
+    font-size: 350%;
 }
 button{
     width: 30%;
     min-height: 50px;
+    border: 2px solid rgb(248, 77, 77);
+    border-radius: 9px; 
+    font-size: 130%;
+    font-weight: bold;
+}
+button:active{
+    background-color: #ccc;
 }
 .opcoes{
     margin: 0 auto;

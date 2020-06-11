@@ -7,7 +7,7 @@ function janken(ppt){
     }
     mytry = Number(ppt)
     gontry = getRandomInt(0,3)
-    gon.innerHTML=`<img src="img/primeiropedra.jpg">`
+    gon.innerHTML=`<p>Prepare-se...</p> <p>Primeiro é pedra!</p><img src="img/primeiropedra.jpg">`
     document.querySelector("audio").play()
     /* 0 = Pedra   1 = Papel   2 = tesoura*/
     setTimeout(function(){
