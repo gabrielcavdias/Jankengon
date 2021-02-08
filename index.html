@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
     <title>Primeiro é Pedra</title>
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,25 +17,24 @@
     </header>
     <main>
         <h2>The game</h2>
+        <div class="score">
+            <p>Score</p>
+            <p>0</p>
+        </div>
         <!--Falta escolher um H2 sólido-->
         <p>O Objetivo do jogo é você ganhar do Gon no Joquempô em uma melhor de 5</p>
         <p>O vencedor ganha um card de Greed Island aleatório que pode dar vantagens nas próximas partidas</p>
         <!--Ainda tá em desenvolvimento essa parte não se empolga-->
         <section class="opcoes">
-            <button onclick="janken(0)">
-                Pedra
-            </button>
-            <button onclick="janken(1)">
-                Papel
-            </button>
-            <button onclick="janken(2)">
-                Tesoura
-            </button>
+            <img onclick="janken(0)" src="img/pedra_opc.jpg" alt="pedra">
+            <img onclick="janken(1)" src="img/papel_opc.jpg" alt="papel">
+            <img onclick="janken(2)" src="img/tesoura_opc.jpg" alt="tesoura">
         </section>
         <div id="gon"> 
         </div>
     </main>
     <audio><source src="audio/jankenpo.mp3" type="audio/mpeg"></audio>
     <script src="script/main.js"></script>
+    <script src="script/consume.js"></script>
 </body>
 </html>

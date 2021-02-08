@@ -6,6 +6,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
+header img{
+    width: 300px;
+}
 main{
     color: #eee;
     background-color: #333;
@@ -21,14 +24,6 @@ main p,h2{
 h2{
     font-size: 350%;
 }
-button{
-    width: 30%;
-    min-height: 50px;
-    border: 2px solid rgb(248, 77, 77);
-    border-radius: 9px; 
-    font-size: 130%;
-    font-weight: bold;
-}
 button:active{
     background-color: #ccc;
 }
@@ -38,11 +33,26 @@ button:active{
     display: flex;
     justify-content: space-between;
 }
-img{
-    width: 300px;
+.score{
+    text-align: center;
+    font-size: 3rem;
+}
+.score p{
+    margin: 0;
+}
+.opcoes img{
+    transition: 0.4s;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(248, 77, 77);
+}
+.opcoes img:hover{
+    transition: 0.4s;
+    box-shadow: 2px 2px 10px rgb(255, 233, 233);
 }
 #gon img{
     display: block;
     margin: 0 auto;
     padding: 10px;
+    width: 300px;
 }
