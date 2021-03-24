@@ -1,5 +1,6 @@
 let gon = document.getElementById('gon')
 let score = 0
+//MDs não tem nem um ano e já vejo tanto problema no código
 function janken(ppt){
     function getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -50,5 +51,5 @@ function janken(ppt){
             innerScore.innerText = score
     }
     , 4000)
-    
+    //Adicionando comentários só pra testar
 }
